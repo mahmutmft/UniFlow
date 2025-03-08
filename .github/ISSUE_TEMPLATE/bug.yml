@@ -1,0 +1,65 @@
+name: Bug Report
+description: File a bug report
+title: 'fix: '
+labels: ['bug']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Report a bug in the Moodle Course Tracker extension
+
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: Bug Description
+      description: What's not working correctly?
+      placeholder: "Example: Progress tracking button doesn't appear on some course pages"
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce
+      description: How can you reproduce this issue?
+      value: |
+        1. Go to '...'
+        2. Click on '...'
+        3. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What should happen?
+      placeholder: 'The tracking button should appear next to each activity'
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: How critical is this bug?
+      options:
+        - High (Breaking)
+        - Medium (Major Feature Affected)
+        - Low (Minor Issue)
+    validations:
+      required: true
+
+  - type: input
+    id: browser
+    attributes:
+      label: Browser
+      description: Which browser are you using?
+      placeholder: 'Chrome 120'
+    validations:
+      required: true
+
+  - type: textarea
+    id: fix-ideas
+    attributes:
+      label: Potential Fix
+      description: If you have any ideas about what's causing this or how to fix it
+      placeholder: 'Might be related to the course page structure...'

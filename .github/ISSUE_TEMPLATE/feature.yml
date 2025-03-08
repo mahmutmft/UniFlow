@@ -1,0 +1,64 @@
+name: Feature
+description: Add a new feature to the extension
+title: 'feat: '
+labels: ['feature']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Add a new feature to the Moodle Course Tracker extension
+
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: Feature Description
+      description: Describe the feature you want to add
+      placeholder: 'Example: Add a progress bar for each course section'
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: How important is this feature?
+      options:
+        - High
+        - Medium
+        - Low
+    validations:
+      required: true
+
+  - type: textarea
+    id: implementation-details
+    attributes:
+      label: Implementation Details
+      description: Technical details about how to implement this feature
+      placeholder: "- Files to modify\n- New functions needed\n- Changes required"
+
+  - type: textarea
+    id: tasks
+    attributes:
+      label: Tasks
+      description: Break down the implementation into tasks
+      value: |
+        - [ ] Task 1
+        - [ ] Task 2
+        - [ ] Task 3
+
+  - type: input
+    id: time-estimate
+    attributes:
+      label: Time Estimate
+      description: How long do you think this will take?
+      placeholder: 'e.g., 2 hours'
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Pre-implementation Checklist
+      options:
+        - label: This feature is not already implemented
+          required: true
+        - label: I have considered potential side effects
+          required: true

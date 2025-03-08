@@ -1,0 +1,65 @@
+name: Enhancement
+description: Suggest an improvement to existing functionality
+title: 'enhance: '
+labels: ['enhancement']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Suggest an improvement to an existing feature in the Moodle Course Tracker
+
+  - type: textarea
+    id: current-feature
+    attributes:
+      label: Current Feature
+      description: Which existing feature would you like to improve?
+      placeholder: 'Example: Progress tracking button UI'
+    validations:
+      required: true
+
+  - type: textarea
+    id: enhancement-description
+    attributes:
+      label: Enhancement Description
+      description: How would you like to improve this feature?
+      placeholder: 'Example: Add color coding based on completion status'
+    validations:
+      required: true
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type of Enhancement
+      options:
+        - UI/UX Improvement
+        - Performance Optimization
+        - Code Refactoring
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: How important is this enhancement?
+      options:
+        - High
+        - Medium
+        - Low
+    validations:
+      required: true
+
+  - type: textarea
+    id: implementation-notes
+    attributes:
+      label: Implementation Notes
+      description: Any technical details about implementing this enhancement
+      placeholder: 'Files to modify, changes needed, etc.'
+
+  - type: input
+    id: time-estimate
+    attributes:
+      label: Time Estimate
+      description: How long do you think this will take?
+      placeholder: 'e.g., 1 hour'
