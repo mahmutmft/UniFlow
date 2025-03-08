@@ -1,0 +1,76 @@
+.flpt-progress {
+    display: inline-block !important;
+    margin-left: 10px !important;
+    vertical-align: middle !important;
+    position: relative !important;
+    z-index: 100 !important;
+}
+
+.flpt-track-btn {
+    background-color: #4834d4 !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 4px !important;
+    padding: 6px 12px !important;
+    font-size: 14px !important;
+    cursor: pointer !important;
+    transition: all 0.2s ease !important;
+    display: inline-block !important;
+    margin: 4px !important;
+    font-weight: bold !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
+}
+
+.flpt-track-btn:hover {
+    background-color: #3721b0 !important;
+    transform: translateY(-1px) !important;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15) !important;
+}
+
+.activity.flpt-tracked {
+    background-color: rgba(72, 52, 212, 0.05) !important;
+    border-left: 4px solid #4834d4 !important;
+    margin-left: -4px !important;
+    position: relative !important;
+}
+
+.activity.flpt-tracked .flpt-track-btn {
+    background-color: #2ecc71 !important;
+}
+
+.activity.flpt-tracked .flpt-track-btn:hover {
+    background-color: #27ae60 !important;
+}
+
+.activity.flpt-tracked .completioncheckbox {
+    border-color: #4834d4 !important;
+}
+
+.activity.flpt-tracked .activityinstance {
+    padding-left: 8px !important;
+}
+
+/* Make sure our elements are always visible */
+.activityinstance {
+    position: relative !important;
+    display: flex !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+}
+
+.activityinstance > a {
+    flex: 1 !important;
+}
+
+@media (max-width: 768px) {
+    .flpt-progress {
+        display: block !important;
+        margin: 5px 0 !important;
+        width: 100% !important;
+    }
+    
+    .flpt-track-btn {
+        width: 100% !important;
+        padding: 8px !important;
+    }
+} 
